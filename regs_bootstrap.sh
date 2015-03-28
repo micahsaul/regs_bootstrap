@@ -15,6 +15,8 @@ cd ../regulations-core
 workon reg-core
 pip install zc.buildout
 buildout
+./bin/django syncdb
+./bin/django migrate
 cd ../regulations-site
 workon reg-site
 pip install zc.buildout
